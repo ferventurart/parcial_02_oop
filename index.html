@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Boleto de Avion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Calculadora de Boleto de 🛩️</h1>
+        <form id="ticket-form" class="border border-bottom-0 p-4">
+            <div class="mb-3">
+                <label for="origin-city">Ciudad de Origen</label>
+                <select id="origin-city" class="form-select" name="origin-city" required>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="destination-city">Ciudad de Destino</label>
+                <select id="destination-city" class="form-select" name="destination-city" required>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="departure-date">Fecha de Salida</label>
+                <input type="date" class="form-control" id="departure-date" required>
+            </div>
+            <div class="mb-3">
+                <label for="departure-time">Hora de Salida</label>
+                <input type="time" class="form-control" id="departure-time" required>
+            </div>
+            <button type="submit" class="btn btn-primary">💵 Calcular Precio de Boleto</button>
+        </form>
+        <div id="ticket-cost" class="alert alert-primary mt-5" role="alert">
+            La informaci&oacute;n de su vuelo aparecera aqu&iacute;
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
