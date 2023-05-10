@@ -10,7 +10,6 @@ const ticketForm = document.getElementById("ticket-form");
 const ticketCost = document.getElementById("ticket-cost");
 
 ticketForm.addEventListener("submit", (event) => {
-  debugger;
   event.preventDefault();
 
   //Obtener los valores de los campos de entrada.
